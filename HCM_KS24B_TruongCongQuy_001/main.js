@@ -61,6 +61,7 @@ document.getElementById("submit-btn").addEventListener("click", () => {
     // Cập nhật
     students[editingIndex] = newStudent;
     editingIndex = -1;
+    alert("Sửa thông tin thành công")
   }
 
   renderTable(students);
