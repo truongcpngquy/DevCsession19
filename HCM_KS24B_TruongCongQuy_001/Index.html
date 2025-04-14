@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <h1 class="heading">Quản Lý Sinh Viên</h1>
+
+    <form class="form" id="student-form">
+        <input type="text" id="name" placeholder="Họ và tên" />
+        <p class="error" id="name-error"></p>
+        <input type="text" id="student-id" placeholder="Mã số sinh viên" />
+        <p class="error" id="id-error"></p>
+        <input type="email" id="email" placeholder="Email" />
+        <p class="error" id="email-error"></p>
+        <input type="text" id="class" placeholder="Lớp" />
+        <p class="error" id="class-error"></p>
+        <button type="button" id="submit-btn">Thêm sinh viên</button>
+    </form>
+    <div class="form-2">
+
+        <div class="table-container">
+            <table>
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Tìm kiếm theo tên..." />
+                </div>
+                <thead>
+                    <tr>
+                        <th>Họ tên</th>
+                        <th>MSSV</th>
+                        <th>Email</th>
+                        <th>Lớp</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
